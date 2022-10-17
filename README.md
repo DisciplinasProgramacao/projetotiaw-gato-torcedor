@@ -4,7 +4,7 @@ Nossa plataforma tem como objetivo permitir a troca e o empréstimo do cartão s
 
 ### Alunos integrantes da equipe
 
-- Alan Torres
+- Alan Torres de sá
 - César Felipe
 - Gabrielly Luize
 - Luísa Sapori Duarte 
