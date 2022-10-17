@@ -7,7 +7,7 @@ Nossa plataforma tem como objetivo permitir a troca e o empréstimo do cartão s
 - Alan Torres
 - César Felipe
 - Gabrielly Luize
-- Luísa Sapori
+- Luísa Sapori Duarte 
 - Samuel Mesquita
 
 ### Professores reponsáveis 
