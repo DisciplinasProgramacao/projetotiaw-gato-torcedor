@@ -18,7 +18,7 @@
 * Lucas Félix
 
 ## Quadro de tarefas
-
+https://github.com/orgs/DisciplinasProgramacao/projects/40/views/1
 
 ## Instruções para uso
 Coloque aqui as instruções para acessar a página inicial do projeto (caminho completo do arquivo).
