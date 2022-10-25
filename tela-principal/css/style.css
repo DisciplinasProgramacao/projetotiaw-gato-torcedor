@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6{
 }
 h2{
     font-size: 26px;
-    line-height: 26px;
+    
 }
 h4 {
   font-size: 26px;
@@ -869,7 +869,7 @@ a.btn-medium.empty:hover {
 /* ---------------------------------------------------------------------- */
 
  section#menu-countdown {
-      background: url(../img/bgclass.jpg) center center/cover no-repeat fixed;
+      background: url(../img/torcedor.jpeg) center center/cover no-repeat fixed;
       background-repeat: no-repeat;
       padding: 100px 0;
 }
