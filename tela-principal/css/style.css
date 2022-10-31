@@ -92,6 +92,46 @@ h4 {
   color: #ffffff;
 }
 
+.btn-vender{
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  gap: 2rem;
+  margin-right: 3rem;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 4px;
+  overflow: visible;
+}
+
+.vender:hover{
+  color:#C8C5B8;
+  background-color: #cd352a;
+}
+
+.vender{
+  background-color: #f44336;
+  color: #FFF;
+}
+
+.comprar:hover{
+  background-color: #d9b635;
+  color: #212121;
+}
+
+.comprar{
+  background-color: #ffd740;
+  color: #000000;
+}
 
 /*header*/
 @media (max-width: 991px) {
