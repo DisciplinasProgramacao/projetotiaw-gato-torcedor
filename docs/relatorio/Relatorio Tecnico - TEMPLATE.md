@@ -1,21 +1,18 @@
 # Informações do Projeto
 `TÍTULO DO PROJETO`  
 
-......  COLOQUE AQUI O SEU TEXTO ......
+gato torcedor 
 
 `CURSO` 
-
-......  COLOQUE AQUI O SEU TEXTO ......
+sistema de informações puc minas 2022
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+Os membros da equipe são:
+Luísa sapori
+alan torres
+samuel mesquita 
+gabrielly 
 
 # Estrutura do Documento
 
@@ -39,19 +36,22 @@
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos. Utilize como base a ficha inicial de detalhamento do problema.
->
+é identificado pelo grupo, o movimento social iniciado por uma única partida de futebol. 
+o número de visitantes que o estádio recebe vem crescendo com os últimos tempo, assim tambem a aparição de cambistas, 
+fonte não segura e pouco prática de adquirir o ingresso. Desta maneira , afim de levar ao torcedor , um ingresso com segurança e praticidade,
+criamos uma plataforma , compra e venda voltada a este publico. Além disso por ser uma plataforma que agrupa vendedores, trazemos por meio
+da tecnologia , a competitividade de garante um preço justo.
 
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Nos dedicamos ao desenvolvimento deste softwear, pois o futebol infrenta dois problemas em escala crescente hoje: 
+a venda por cambistas e o valor de custo de se manter assossiado a um time. 
+afim de solucionar o primeiro impecílio, permitimos que por meio da plataforma, o torcedor compre o ingresso, ou alugue um cartão sócio torcedor, com segurança
+preço justo e de forma prática. A segunda questão é elimida pela possibilidade de venda na mesma plataforma, aonde é possível que o portador do cartão, viabilize
+a um companheiro seu sócio, possibilitando o lucro deste , enquanto ajuda seu time do coração. 
+a plataforma é organizada differentemente para cada tipo de usuário: comprador e vendedor. 
+garantindo a melhor experiencia a todos. 
+
 
 > Aqui você deve descrever os objetivos do trabalho indicando que o
 > objetivo geral é desenvolver um software para solucionar o problema
@@ -64,7 +64,10 @@
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
+.publico alvo 1 : 
+associado ao time do corção, titular do sócio
+publico alvo 2
+torcedor sem sócio torcedor.
 
 > Descreva quem serão as pessoas que usarão a sua aplicação indicando os
 > diferentes perfis. O objetivo aqui não é definir quem serão os
