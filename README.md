@@ -1,6 +1,6 @@
 ## Gato-Torcedor
 
-Nossa plataforma tem como objetivo permitir a troca e o empréstimo do cartão sócio-torcedor de forma segura, acessível e honesta, sendo vantajoso para os titulares possuidores do cartão que desejam fazer a venda dos ingressos e, para as pessoas que não frequentam os jogos terem possibilidade de fazerem compras com preços mais baixos quando desejarem.
+Nossa plataforma tem como objetivo ótimizar trocas e o empréstimo do cartão sócio-torcedor de forma segura, acessível e honesta, sendo vantajoso para os titulares possuidores do cartão que desejam fazer a venda dos ingressos,e também, para aquelas que não fazem parte desse programa de associação e tem interesse em acompanhar uma partida de perto!
 
 ### Alunos integrantes da equipe
 
