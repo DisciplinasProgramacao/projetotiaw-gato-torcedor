@@ -22,33 +22,32 @@
       <main>
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-                <div class="col-md-12 col-sm-10 col-12">
+                <div class="col-md-12 col-sm-10 col-12 mt-5">
                     <div class="card animated fadeIn">
-                        <div class="container-foto mb-2">
-                            <center><img class="center animated rollIn" src="img/ava.png" alt="avatar"></center>
-                        </div>
-                        
                         <div class="name">
-                           Faça seu login:
+                           Faça seu cadastro:
                         </div>
                             <form>
                                 <div class="form-group row d-flex justify-content-center">
                                   <label for="staticEmail" class="col-sm-8 col-form-label">Email</label>
                                   <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="staticEmail" value="email@example.com" required>
+                                    <input type="text" name="email" class="form-control" id="staticEmail" value="email@example.com" required>
                                   </div>
                                 </div>
                                 <div class="form-group d-flex justify-content-center row mb-3 mt-1">
-                                  <label for="inputPassword" class="col-sm-8 col-form-label">Password</label>
+                                  <label for="senha" class="col-sm-8 col-form-label">Senha</label>
                                   <div class="col-sm-8">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                    <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha:" required>
+                                  </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-center row mb-3 mt-1">
+                                  <label for="confirmarSenha" class="col-sm-8 col-form-label">Confirmar senha</label>
+                                  <div class="col-sm-8">
+                                    <input type="password" name="confirmarSenha" class="form-control" id="confirmarSenha" placeholder="Confirmar senha:" required>
                                   </div>
                                 </div>
                                 <div class="form-group row d-flex justify-content-center">
-                                  <a href="./tela-principal/LayoutApresentacao.html" id="fazerLogin" style="width: 22rem;" class="btn btn-success">Entrar</a>
-                                </div>
-                                <div class="form-group d-flex justify-content-center m-3">
-                                  <a href="./cadastro.html">Criar conta</a>
+                                  <a href="./tela-principal/LayoutApresentacao.html" id="criarConta" style="width: 22rem;" class="btn btn-success">Criar</a>
                                 </div>
                               </form>
 
@@ -94,6 +93,7 @@
       <footer class="animated fadeIn">
          &copy; 2022. Gato Torcedor.
       </footer>
-      <script src="./js/login.js"></script>
+
+      <script src="./js/cadastro.js"></script>
    </body>
 </html>
