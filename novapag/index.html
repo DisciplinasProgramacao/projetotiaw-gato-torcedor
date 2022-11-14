@@ -30,8 +30,8 @@
     <![endif]-->
 
     <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header visible-xs">
+        <div class="homepage">
+         
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">parte de navegação</span>
                 <span class="icon-bar"></span>
@@ -40,12 +40,8 @@
                 </button>
                 <a class="navbar-brand" href="#"><h2>Gato torcedor</h2></a>
             </div><!-- navbar-header -->
-        <div id="navbar" class="navbar-collapse collapse">
-            <div class="hidden-xs" id="logo"><a href="#header">
-                <img src="logo.in.jpg" alt="">
-            </a></div>
-
-            <ul class="nav navbar-nav navbar-right">
+            
+             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#reservation">Reserva de ingressos</a></li>
                 <li><a href="#chefs">jogos</a></li>
 
@@ -61,11 +57,12 @@
         </div><!--/.navbar-collapse -->
         </div><!-- container -->
     </div><!-- menu -->
-
     <div id="header">
         <div class="bg-overlay"></div>
         <div class="center text-center">
             <div class="banner">
+             
+                    <h1 id="fittext3" class="title-head text-center white">
                 <h1 class="">Ingressos disponiveis</h1>
             </div>
             <div class="subtitle"><h4>OS MELHORES INGRESSOS SÓ PARA VOCÊ</h4></div>
@@ -74,6 +71,9 @@
             <a id="scrollDownArrow" href="#"><i class="fa fa-chevron-down"></i></a>
         </div>
     </div>
+            <!-- /slider -->
+        </div>
+    </section>
     <!-- /#header -->
 
     <div id="story" class="light-wrapper">
@@ -178,6 +178,7 @@
                             <p>Flamengo e Atletico-PR se enfrentam em busca do maior título da America do sul.</p>
                             
                             <a class="btn btn-danger" href="#">COMPRE AGORA</a>
+                            
                             <div class="clearfix"></div>
                         </div>
                         <!--price tag-->
@@ -324,14 +325,14 @@
     <div id="chefs" class="parallax pricing">
         <div class="container inner">
 
-            <h2 class="section-title text-center">ESPN noticias</h2>
+            <h2 class="section-title text-center">Notícias</h2>
             <p class="lead main text-center">Todas as novidades do mundo dos esportes!</p>
             
             <div class="row text-center chefs">
                 <div class="col-sm-4">
                     <div class="col-wrapper">
                         <div class="icon-wrapper">
-                            <img src="espn.jpg">
+                            <img src="espn.jpg" > <link rel="stylesheet" href="https://www.espn.com.br/">
                         </div>
                      <link rel="stylesheet" href="https://www.espn.com.br/">
                    </div>
@@ -361,27 +362,38 @@
     </div><!-- /#chefs -->
 
 
-    <footer id="footer" class="dark-wrapper">
-        <section class="ss-style-top"></section>
-        <div class="container inner">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; gato torcedor desde 2010
-                  
-                </div>
-                <div class="col-sm-6">
-                    <div class="social-bar">
-                        <a href="#" class="fa fa-instagram tooltipped" title=""></a>
-                        <a href="#" class="fa fa-youtube-square tooltipped" title=""></a>
-                        <a href="#" class="fa fa-facebook-square tooltipped" title=""></a>
-                        <a href="#" class="fa fa-pinterest-square tooltipped" title=""></a>
-                        <a href="#" class="fa fa-google-plus-square tooltipped" title=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <section class="footer">
+	    <div class="footer-section container">
+	       <div class="item-footer col-sm-6 col-xs-12 col-md-3">
+	            <a class="navbar-logobrand" href="#">Gato Torcedor</a>
+				<img class="navbar-brand" src="./img/logo.jpeg" style="height: 6rem; width: 6rem; padding:0">
+	       </div>
+	       <div class="item-footer col-sm-6 col-xs-12 col-md-3">
+	            <h4 class="footer-title">Top Links</h4>
+	            <ul class="gold links-footer">
+	            	<li>Home</li>
+	            	<li>Sobre nós</li>
+	            	<li> Contato</li>
+	            </ul>
+	       </div>
+	       <div class="item-footer col-sm-6 col-xs-12 col-md-3">
+	            <h4 class="footer-title">Categoria</h4>
+	            <ul class="gold links-footer">
+	            	<li>Jogos no seu estado</li>
+	            	<li>Vendedores mais bem avaliados</li>
+	            	<li>Filtro de times</li>
+	            	<li>Times</li>
+	            </ul>
+	       </div>
+	       <div class="item-footer col-sm-6 col-xs-12 col-md-3">
+	            <h4 class="footer-title footer-tags">Parcerias</h4>
+				<span class="fa fa-tag gold"> ESPN Sports </span><span class="fa fa-tag gold"> Globo esporte </span><span class="fa fa-tag gold"> Brasileiro serie A </span><br /><span class="fa fa-tag gold"> Libertadores </span><span class="fa fa-tag gold"> Copa do Brasil </span><span class="fa fa-tag gold"> Estadual </span>
+	       </div>
+	   </div>
+    </section>
+    <section class="footer-bottom">
+    	<p class="text-center copyright-text">&copy;Gato Torcedor</p>
+    </section>
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/jquery.actual.min.js"></script>
