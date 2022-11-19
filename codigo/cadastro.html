@@ -22,56 +22,33 @@
       <main>
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-                <div class="col-md-12 col-sm-10 col-12">
+                <div class="col-md-12 col-sm-10 col-12 mt-5">
                     <div class="card animated fadeIn">
-                        <div class="container-foto mb-2">
-                          <center><img class="center animated rollIn" src="img/ava.png" alt="avatar"></center>
-                        </div>
-                        
-<<<<<<< Updated upstream
                         <div class="name">
-<<<<<<< HEAD
-                           Faça o seu cadastro:
-=======
-                           Faça seu login:
-=======
-                        <div id="loguin-title" class="name">
-                           Faça seu Login:
->>>>>>> Stashed changes
->>>>>>> alterando_tela_venda
+                           Faça seu cadastro:
                         </div>
                             <form>
-                              <div id="form-login">
                                 <div class="form-group row d-flex justify-content-center">
-                                  <label for="staticEmail" class="col-sm-8 col-form-label">EMAIL </label>
+                                  <label for="staticEmail" class="col-sm-8 col-form-label">Email</label>
                                   <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="staticEmail" value="email@example.com" required>
+                                    <input type="text" name="email" class="form-control" id="staticEmail" value="email@example.com" required>
                                   </div>
                                 </div>
                                 <div class="form-group d-flex justify-content-center row mb-3 mt-1">
-                                  <label for="inputPassword" class="col-sm-8 col-form-label">PASSWORD</label>
+                                  <label for="senha" class="col-sm-8 col-form-label">Senha</label>
                                   <div class="col-sm-8">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                    <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha:" required>
                                   </div>
                                 </div>
-<<<<<<< HEAD
-                                <a class="form-group row d-flex justify-content-center">
-                                  <a href="./tela-principal/index.html" style="width: 30rem;" class="btn btn-success">ENTRAR</a>
-                                </a>
-=======
+                                <div class="form-group d-flex justify-content-center row mb-3 mt-1">
+                                  <label for="confirmarSenha" class="col-sm-8 col-form-label">Confirmar senha</label>
+                                  <div class="col-sm-8">
+                                    <input type="password" name="confirmarSenha" class="form-control" id="confirmarSenha" placeholder="Confirmar senha:" required>
+                                  </div>
+                                </div>
                                 <div class="form-group row d-flex justify-content-center">
-                                  <a href="./tela-principal/LayoutApresentacao.html" id="fazerLogin" style="width: 22rem;" class="btn btn-success">Entrar</a>
+                                  <a href="./tela-principal/LayoutApresentacao.html" id="criarConta" style="width: 22rem;" class="btn btn-success">Criar</a>
                                 </div>
-<<<<<<< Updated upstream
-                                <div class="form-group d-flex justify-content-center m-3">
-                                  <a href="./cadastro.html">Criar conta</a>
-=======
-                              </div>
-                                <div id="criar-conta" class="text-center">
-                                  <a href="#">criar nova conta</a>
->>>>>>> Stashed changes
-                                </div>
->>>>>>> alterando_tela_venda
                               </form>
 
                         <p class="icons animated pulse">
@@ -116,6 +93,7 @@
       <footer class="animated fadeIn">
          &copy; 2022. Gato Torcedor.
       </footer>
-      <script src="./js/login.js"></script>
+
+      <script src="./js/cadastro.js"></script>
    </body>
 </html>
