@@ -72,6 +72,15 @@
 				 <li class="star-icon" data-avaliacao="5"></li>
 			   </ul>
 			</p>
+		<script>
+				var stars= document.querySelectorAll('.star-icon');
+					document.addEventListener('click',function(st){
+				var classStar = st.target.classList;
+					if(!classStar.contains('ativo')){
+						stars.forEach(function(star){
+						stars.classList.remove('ativo');
+						});
+		</script>
 		 </div>
 		
             
