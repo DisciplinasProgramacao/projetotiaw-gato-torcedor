@@ -46,19 +46,33 @@
       <br>
       <div class="container text-center">
         <div class="row">
-          <div>
-            AVALIAÇÃO DE "usuário" :
-            <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2450568-icone-de-avaliacao-de-cinco-estrelas-vetor.jpg"
-            alt="Image" height="98" width="160"
-            />
-		<ul class="avaliação">
-			<li class="star-icon ativo" data-avaliacao="1"></li>
-			<li class="star-icon" data-avaliacao="2"></li>
-			<li class="star-icon" data-avaliacao="3"></li>
-			<li class="star-icon" data-avaliacao="4"></li>
-			<li class="star-icon" data-avaliacao="5"></li>
-		  </ul>
-        </div>
+        <br>
+		<div>
+			AVALIAÇÃO DE "usuário" :
+		
+		   </div>
+		   <style>
+			.avaliacao{display: flex};
+			.star-icon {
+				list-style-type:none;
+				border:20px solid #fff;
+				cursor: pointer;
+				color:gold;
+				}
+				.star-icon::before{
+					content: "\2605";
+				}
+		   </style>
+		   <div>
+			<p><ul class="avaliacao">
+				 <li class="star-icon ativo" data-avaliacao="1"></li>
+				 <li class="star-icon" data-avaliacao="2"></li>
+				 <li class="star-icon" data-avaliacao="3"></li>
+				 <li class="star-icon" data-avaliacao="4"></li>
+				 <li class="star-icon" data-avaliacao="5"></li>
+			   </ul>
+			</p>
+		 </div>
 		
             
             <a href="ingressosavenda.html" class="button" tabindex="-1" role="button" aria-disabled="true">Ingressos a venda</a>
