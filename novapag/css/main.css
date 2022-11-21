@@ -10,10 +10,12 @@ img {
 section {
     position:relative;
     padding:0;
-    background:#F0A830;
-    color:#FFF;
     text-align:center;
-}
+    }
+    section.footer {
+        background: rgb(42, 39, 50);
+        padding: 60px 0;
+    }
 section::before,section::after {
     position:absolute;
     content: '';
@@ -137,6 +139,7 @@ section::before,section::after {
     -moz-transition:all 0.4s;
     -o-transition:all 0.4s;
     transition:all 0.4s;
+    font-weight:bold;
     color:white;
     font-weight:bold;
 }
@@ -151,7 +154,7 @@ section::before,section::after {
     04. Services 
 ========================================================================== */
 .light-wrapper {
-    background:#fbfbfb;
+    background: #d7d7dbfb;
 }
 .inner {
     padding-top:100px;
@@ -223,7 +226,7 @@ section::before,section::after {
     margin-bottom:20px;
 }
 .parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6 {
-    color:#fff;
+    color:rgb(19, 13, 13);
 }
 .facts p {
     font-size:16px;
@@ -247,7 +250,7 @@ section::before,section::after {
 }
 .menu-titles h1 {
     text-shadow:none;
-    color:#ed0121;
+    color: #2e1c1c;
     text-align:center;
     margin:0 auto;
     padding-top:30px;
@@ -278,9 +281,9 @@ section::before,section::after {
     right:0;
     z-index:15;
     display:inline-block;
-    width:80px;
-    height:80px;
-    line-height:90px;
+    width:60px;
+    height:60px;
+    line-height:60px;
     text-align:center;
     font-weight:700;
     color:#fff;
@@ -310,7 +313,7 @@ section::before,section::after {
     float:left;
 }
 .pricing-item-details a,.pricing-item-details p,.pricing .lead {
-    color:white;
+    color:rgb(0, 0, 0);
     font-weight:bold;
 }
 .pricing .pricing-item .pricing-item-details {
@@ -444,14 +447,28 @@ section::before,section::after {
 
 @media (min-width:768px) {
     .navbar-nav {
-        float:none !important;
-        width:100%;
-        text-align:center;
-        margin-left:9px;
+        line-height: 1.428571429;
+        background-color: rgb(42, 39, 50);
+        border: 1px solid rgb(42, 39, 50);
     }
     .navbar-nav>li {
         display:inline-block;
         float:none;
+    }
+    .navbar.navbar-default {
+        height: 80px;
+        padding: .8rem 1.5rem;
+  
+    }
+    .header .navbar {
+        background-color: rgb(42, 39, 50);
+        border: 1px solid rgb(42, 39, 50);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+        filter: alpha(opacity=85);
+        -moz-opacity: 0.85;
+        -khtml-opacity: 0.85;
+        opacity: 0.85;
+        border-radius: 0;
     }
     #logo {
         position:absolute;
@@ -478,4 +495,22 @@ section::before,section::after {
         text-align: left;
         margin-top: 30px;
     }
-}
+
+    .item-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-bottom {
+        background: rgba(0, 0, 0, 1);
+        height: 50px;
+        border-top: 1px solid rgb(38, 38, 38);
+        padding-top: 12px;
+        }
+        p.copyright-text {
+            color: rgb(162, 162, 162) !important;
+        }
+        .footer-bottom p {
+            font-size: 14px;
+        }
+       
