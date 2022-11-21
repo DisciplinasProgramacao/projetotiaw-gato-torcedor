@@ -5,8 +5,8 @@
 <meta charset="utf-8" />
 <script>
     onload = () => {
-        if(localStorage.getItem('user'))
-            nome.value = JSON.parse(localStorage.getItem('user')).nome;
+        if (localStorage.getItem('user'))
+        nome.value = JSON.parse(localStorage.getItem('user')).nome;
 
         login.onsubmit = (evento) => {
             let user = { nome: nome.value, senha: senha.value };
