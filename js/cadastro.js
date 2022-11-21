@@ -4,6 +4,10 @@ document.addEventListener("click", e=>{
 
     if(element.id == "criarConta"){
         e.preventDefault();
+        if(localStorage.getItem('login') == null){
+            localStorage.setItem('login',JSON.stringify([]));
+        }
+        const local = JSON.parse(localStorage.getItem("login"));
         const form = document.querySelector("form");
         const login = {
             email: form.email.value,
@@ -13,7 +17,9 @@ document.addEventListener("click", e=>{
     
         if(login.email != "" && login.email.length > 10){
             if(login.senha == confirmarSenha){
-                localStorage.setItem('login',JSON.stringify([login]))
+                local.push(login);
+                localStorage.setItem('login',JSON.stringify(local))
+                console.log(localStorage.getItem("login"));
                 window.location.href =  document.getElementById('criarConta').href;
             } 
             else{

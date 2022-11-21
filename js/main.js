@@ -8,15 +8,20 @@ document.addEventListener('click', e=>{
 
         const form = document.querySelector('form');
 
-        const senha = form.senha;
-        const email = form.email;
+        const senhalog = form.senha.value;
+        const emaillog = form.email.value;
 
-        const lsenha = localStorage.getItem('senha');
-        const lemail = localStorage.getItem('email');
-
-        if(lsenha == senha && lemail == email){
-            const url = w
-            window.location.assign(window.location.href)
+        const login = JSON.parse(localStorage.getItem('login'));
+        
+        if(login != null){
+            for(let i = 0; i < login.length; i++){
+                const {email, senha} = login[i];
+                if(senhalog == senha && emaillog == email){
+                    alert("usuario logado com sucesso");
+                    window.location.href =  document.getElementById('fazerLogin').href;
+                }
+            }
+            
         }
     }
 })
