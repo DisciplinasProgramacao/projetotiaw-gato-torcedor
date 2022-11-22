@@ -134,6 +134,11 @@ section::before,section::after {
     padding-top:8px;
     padding-bottom:0;
 }
+.navbar{
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
 .navbar-inverse .navbar-nav>li>a {
     -webkit-transition:all 0.4s;
     -moz-transition:all 0.4s;
