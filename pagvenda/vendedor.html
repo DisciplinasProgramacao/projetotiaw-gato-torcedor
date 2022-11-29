@@ -14,7 +14,7 @@
 	===================================================================================================  -->
 	<link rel="stylesheet" href="font/fontello.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="/pagvenda/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-queries.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/countdown.demo.css" type="text/css">
@@ -33,9 +33,9 @@
 	            <li><a href="#menu-features">Sobre nós</a></li>
 	            <li><a href="#menu-countdown">Contagem Regressiva</a></li>
 	            <li><a href="#menu-price">Preços</a></li>
-	            <li><a href="perfil.html">Meu perfil</a></li>
-              	<li><a class="active" href="vendedor.html">Venda seu ingresso</a></li>
-	            <li><a href="..">Sair</a></li>
+	            <li><a href="/perfilvendedor/perfil.html">Meu perfil</a></li>
+              <li class="active"><a href="vendedor.html">Venda seu ingresso</a></li>
+	            <li><a href="#menu-contact">Fale conosco</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
@@ -43,50 +43,32 @@
 	</header>
 	<!-- end Header -->
 
-<main>
-	<section class="infoIngresso">
-	<div class="infoIngressoTitulo">
-		<h2>Informações sobre o ingresso</h2>
-	</div>
-	</section>
+    <br>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">INFORMAÇÕES SOBRE O INGRESSO</label>
+      </div>
 
-	<section class="campeonatoTitulo">
-		<b>Escolha o campeonato:</b> 
-		<select class="campeonatosOpcoes" id="campoCampeonato">
-	  		<option selected>...</option>
-	  		<option value="Libertadores">Libertadores</option>
-	  		<option value="Copa do Brasil">Copa do Brasil</option>
-	  		<option value="Brasileirão">Brasileirão</option>
-	  		<option value="Campeonato Mineiro">Campeonato Mineiro</option>
-	  		<option value="Série B">Série B</option>
-		</select>
-	</section>
-
-	<section class="jogoTitulo">
-		<b>Jogo</b>
-		<select class="jogosOpcoes" id="campoJogos">
-			<option selected>...</option>
-			<option value="1">CRUZEIRO X ATLÉTICO</option>
-			<option value="2">CRUZEIRO X ATLÉTICO</option>
-			<option value="3">CRUZEIRO X ATLÉTICO</option>
-		</select>
-	</section>
-
-	<section class="valorTitulo">
-		<b>Valor:</b>
+      <br>
+	  <button id="btnCarregaDados">Histórico de ingressos vendidos</button>
+      
+	  <div id="tela" class="mb-3"></div>
+	  <br>
+	  	<div id="formJogos">
+		Para qual jogo deseja vender? <br>
+		<input type="text" id="campoJogos"></input><br>
+		<br>
+		Preço do ingresso: <br>
 		<input type="text" id="campoPreco"><br>
-	</section>
+		<br>
+		Observações: <br>
+		<input type="text" id="campoObs"><br>
+		<br><br>
+		<button id="btnIncluirAVenda">Colocar à venda</button>
+			
 
-	<section class="obsTitulo">
-		<b>Observações:</b><br>
-		<input type="text" id="campoObs">
-	</section>
+      <br>
 
-	  <div id="botaoVenda">
-	  <button id="btnIncluirAVenda"><b>Colocar à venda</b></button>
-		</div>
-
-</main>
+      <br>
 
 	   <script src="./js/app.js"></script>
 

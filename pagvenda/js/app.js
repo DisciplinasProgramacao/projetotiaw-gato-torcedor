@@ -6,12 +6,8 @@ function leDados () {
         objDados = JSON.parse (strDados);
     } 
     else {
-        objDados = { 
-            
-            jogos: [{ }],
-            campeonatos: [ { id: 1, camp: 'Libertadores'}, {id: 2, camp: 'Copa do Brasil'}, { id: 3, camp: 'Brasileirão'}, { id: 4, camp: 'Campeonato Mineiro'}, { id: 5, camp: 'Série B'}]            
-        
-        }
+        objDados = { jogos: [{}] 
+            }
     }
 
     return objDados;
@@ -26,17 +22,14 @@ function incluirJogos () {
     let objDados = leDados();
 
     // Incluir um novo jogo
-    let strCamp = document.getElementById ('campoCampeonato').value;
     let strJogo = document.getElementById ('campoJogos').value;
     let strPreco = document.getElementById ('campoPreco').value;
     let strObservacoes = document.getElementById ('campoObs').value;
     let novoJogo = {
-        campeonato: strCamp,
         jogo: strJogo,
         preco: strPreco,
         observacoes: strObservacoes
     };
-
     objDados.jogos.push (novoJogo);
 
     //Salvar os dados no localStorage
@@ -49,12 +42,12 @@ function incluirJogos () {
 }
 
 function imprimeDados () {
-    let tela = document.getElementById('carregaHistorico');
+    let tela = document.getElementById('tela');
     let strHtml = '';
     let objDados = leDados ();
     
     for(i = 0; i < objDados.jogos.length; i++){
-        strHtml += `<p>${objDados.jogos[i].campeonato} - ${objDados.jogos[i].jogo} - ${objDados.jogos[i].preco} - ${objDados.jogos[i].observacoes}</p>` 
+        strHtml += `<p>${objDados.jogos[i].jogo} - ${objDados.jogos[i].preco} - ${objDados.jogos[i].observacoes}</p>` 
     }
 
     tela.innerHTML = strHtml;
