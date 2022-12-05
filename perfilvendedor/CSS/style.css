@@ -959,3 +959,8 @@ p {
   font-size: 18px;
   color: #313131 !important;
 }
+.avaliacao{
+    display:flex;
+    flex-direction: row;
+    size: large;
+}
