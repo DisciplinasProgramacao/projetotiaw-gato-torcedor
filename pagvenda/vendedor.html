@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Define Charset -->
+	<meta charset="UTF-8">
+	<!-- Page Title -->
+	<title>Venda seu ingresso</title>
+	
+	<!-- Responsive Metatag --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.html">
+	<!-- Stylesheet
+	===================================================================================================  -->
+	<link rel="stylesheet" href="font/fontello.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="/pagvenda/css/style.css">
+	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/countdown.demo.css" type="text/css">
+	</head>	
+	<body>
+
+	<!-- Header -->
+	<div class="homepage">
+	<header>
+	    <div class="navbar navbar-default" role="navigation">
+			
+			<img class="navbar-brand" src="./img/logo.jpeg" style="height: 7rem; width: 7rem; padding:0">
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li class="nav-item"><a href="/tela-principal/index.html">Home</a></li>
+	            <li><a href="#menu-features">Sobre nós</a></li>
+	            <li><a href="#menu-countdown">Contagem Regressiva</a></li>
+	            <li><a href="#menu-price">Preços</a></li>
+	            <li><a href="perfil.html">Meu perfil</a></li>
+              	<li><a class="active" href="vendedor.html">Venda seu ingresso</a></li>
+	            <li><a href="..">Sair</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+	</header>
+	<!-- end Header -->
+
+<main>
+	<section class="infoIngresso">
+	<div class="infoIngressoTitulo">
+		<h2>Informações sobre o ingresso</h2>
+	</div>
+	</section>
+
+	<section class="campeonatoTitulo">
+		<b>Escolha o campeonato:</b> 
+		<select class="campeonatosOpcoes" id="campoCampeonato">
+	  		<option selected>...</option>
+	  		<option value="Libertadores">Libertadores</option>
+	  		<option value="Copa do Brasil">Copa do Brasil</option>
+	  		<option value="Brasileirão">Brasileirão</option>
+	  		<option value="Campeonato Mineiro">Campeonato Mineiro</option>
+	  		<option value="Série B">Série B</option>
+		</select>
+	</section>
+
+	<section class="jogoTitulo">
+		<b>Jogo</b>
+		<select class="jogosOpcoes" id="campoJogos">
+			<option selected>...</option>
+			<option value="1">CRUZEIRO X ATLÉTICO</option>
+			<option value="2">CRUZEIRO X ATLÉTICO</option>
+			<option value="3">CRUZEIRO X ATLÉTICO</option>
+		</select>
+	</section>
+
+	<section class="valorTitulo">
+		<b>Valor:</b>
+		<input type="text" id="campoPreco"><br>
+	</section>
+
+	<section class="obsTitulo">
+		<b>Observações:</b><br>
+		<input type="text" id="campoObs">
+	</section>
+
+	  <div id="botaoVenda">
+	  <button id="btnIncluirAVenda"><b>Colocar à venda</b></button>
+		</div>
+
+</main>
+
+	   <script src="./js/app.js"></script>
+
+</body>
+</html>
