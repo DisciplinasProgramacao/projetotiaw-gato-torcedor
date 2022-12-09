@@ -14,7 +14,7 @@
 	===================================================================================================  -->
 	<link rel="stylesheet" href="font/fontello.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="/pagvenda/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-queries.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/countdown.demo.css" type="text/css">
@@ -34,8 +34,8 @@
 	            <li><a href="#menu-countdown">Contagem Regressiva</a></li>
 	            <li><a href="#menu-price">Preços</a></li>
 	            <li><a href="/perfilvendedor/perfil.html">Meu perfil</a></li>
-              	<li><a class="active" href="vendedor.html">Venda seu ingresso</a></li>
-	            <li><a href="..">Sair</a></li>
+              <li class="active"><a href="vendedor.html">Venda seu ingresso</a></li>
+	            <li><a href="#menu-contact">Fale conosco</a></li>
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
@@ -43,107 +43,34 @@
 	</header>
 	<!-- end Header -->
 
-<main class="conteudo">
-	<section class="conteudoInfo">
+    <br>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">INFORMAÇÕES SOBRE O INGRESSO</label>
+      </div>
 
-		<section class="tituloInfo"></section>
-		<h2><b>Informações sobre o ingresso</b></h2>
-	
-
-	<section class="campeonatoTitulo">
-		<b>Escolha o campeonato:</b>
-		<br> 
-		<select class="campeonatosOpcoes" id="campoCampeonato">
-	  		<option selected>...</option>
-	  		<option value="Libertadores">Libertadores</option>
-	  		<option value="Copa do Brasil">Copa do Brasil</option>
-	  		<option value="Brasileirão">Brasileirão</option>
-	  		<option value="Campeonato Mineiro">Campeonato Mineiro</option>
-	  		<option value="Série B">Série B</option>
-		</select>
-	</section>
-
-	<section class="jogoTitulo">
-		<b>Jogo</b>
+      <br>
+	  <button id="btnCarregaDados">Histórico de ingressos vendidos</button>
+      
+	  <div id="tela" class="mb-3"></div>
+	  <br>
+	  	<div id="formJogos">
+		Para qual jogo deseja vender? <br>
+		<input type="text" id="campoJogos"></input><br>
 		<br>
-		<select class="jogosOpcoes" id="campoJogos">
-			<option selected>...</option>
-			<option value="1">CRUZEIRO X ATLÉTICO </option>
-			<option value="2">AMÉRICA X ATLÉTICO </option>
-			<option value="3">CRUZEIRO X AMÉRICA </option>
-		</select>
-	</section>
-
-	<section class="valorTitulo">
-		<b>Valor:</b>
-		<br>
+		Preço do ingresso: <br>
 		<input type="text" id="campoPreco"><br>
-	</section>
-
-	<section class="obsTitulo">
-		<b>Observações:</b><br>
-		<input type="text" id="campoObs">
-	</section>
 		<br>
-	  <div id="botaoVenda">
-	  <button id="btnIncluirAVenda"><b>Colocar à venda</b></button>
-		</div>
-	</section>
+		Observações: <br>
+		<input type="text" id="campoObs"><br>
+		<br><br>
+		<button id="btnIncluirAVenda">Colocar à venda</button>
+			
 
+      <br>
+
+      <br>
 
 	   <script src="./js/app.js"></script>
 
-</main>
 </body>
-<!-- Footer -->
-<section class="footer">
-	<div class="footer-section container">
-	   <div class="item-footer col-sm-6 col-xs-12 col-md-3">
-			<a class="navbar-logobrand" href="#">Gato Torcedor</a>
-			<img class="navbar-brand" src="./img/logo.jpeg" style="height: 6rem; width: 6rem; padding:0">
-	   </div>
-	   <div class="item-footer col-sm-6 col-xs-12 col-md-3">
-			<h4 class="footer-title">Top Links</h4>
-			<ul class="gold links-footer">
-				<li>Home</li>
-				<li>Sobre nós</li>
-				<li> Contato</li>
-			</ul>
-	   </div>
-	   <div class="item-footer col-sm-6 col-xs-12 col-md-3">
-			<h4 class="footer-title">Categoria</h4>
-			<ul class="gold links-footer">
-				<li>Jogos no seu estado</li>
-				<li>Vendedores mais bem avaliados</li>
-				<li>Filtro de times</li>
-				<li>Times</li>
-			</ul>
-	   </div>
-	   <div class="item-footer col-sm-6 col-xs-12 col-md-3">
-			<h4 class="footer-title footer-tags">Parcerias</h4>
-			<span class="fa fa-tag gold"> ESPN Sports </span><span class="fa fa-tag gold"> Globo esporte </span><span class="fa fa-tag gold"> Brasileiro serie A </span><br /><span class="fa fa-tag gold"> Libertadores </span><span class="fa fa-tag gold"> Copa do Brasil </span><span class="fa fa-tag gold"> Estadual </span>
-	   </div>
-   </div>
-</section>
-<section class="footer-bottom">
-	<p class="text-center copyright-text">&copy;Gato Torcedor</p>
-</section>
-<!--end Modal 6 img -->
-<!-- ======================= JQuery libs =========================== -->
-
-	<!-- jQuery -->
-	<script src="js/jquery-1.9.1.min.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>      
-	<script src="js/nav/jquery.scrollTo.js"></script> 
-	<script src="js/nav/jquery.nav.js"></script>
-	<script src="js/jquery-scrolltofixed.js"></script> 
-	<script src="js/jquery.fittext.js"></script>
-	<script src="js/modernizr.js" type="text/javascript"></script>
-	<!-- Custom -->
-	<script src="js/script.js"></script>
-	<script src="js/jquery.countdown.js"></script>
-	<script type="text/javascript">
-		   $("#fittext3,#fittext2").fitText(.95, { minFontSize: '35px', maxFontSize: '95px' });
-	</script>
 </html>
