@@ -962,37 +962,11 @@ p {
 
 
 .conteudo {
-  display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 249px;
 }
 
-.tituloMeusDados {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+.tela{
+  background-color: #1b4327;
 }
 
-
-.conteudo{
-  background-color: #64CE83;
-  padding: 30px;
-}
-
-.conteudoInfo{
-  display: flex;
-  flex-direction: column;
-  background-image: url(/pagvenda/img/fut11.jpg);
-   align-items: center;
-   gap: 20px;
-   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.jogosOpcoes{
-  font-size: medium;
-}
-
-.footer{
-  padding: 400px;
-}
