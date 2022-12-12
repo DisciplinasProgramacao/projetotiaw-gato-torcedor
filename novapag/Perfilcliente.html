@@ -48,7 +48,6 @@
             <div class="row">
            <div class="col-sm-12-col-md-12" style="display: flex; flex-direction: column; align-items: center;">
                <img id="img-perfil" src="./src/img/perfil.jpg" alt="campeonato brasileiro">
-                <textarea id="descricao" placeholder="Digite uma descrição" style="width: 463px; height: 66px;"></textarea>
               </div> 
             
             </div>
@@ -56,87 +55,84 @@
           
             <div class="row">
                 <div class="col-md-12">
-                  <form class="form form-table"  id="form-perfil">
+                  <form class="form form-table" id="form-perfil">
                         <div class="form-group">
                             <h4> Preencha o formulário de Perfil (todos os campos obrigatórios)</h4>
                         </div>
-                          </div>
-
                         <div class="row">
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="primeiro nome">primeiro nome</label>
-                            <input class="form-control hint" type="text" id="primeiro nome" name="primeiro nome" placeholder="primeiro nome" required="">
+                            <input class="form-control hint" type="text" id="nome" name="nome" placeholder="primeiro nome" required>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="last_name1">sobre nome</label>
-                            <input class="form-control hint" type="text" id="sobre nome" name="sobre nome" placeholder="sobre nome" required="">
+                            <input class="form-control hint" type="text" id="sobreNome" name="sobreNome" placeholder="sobre nome" required>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="phone1">telefone</label>
-                            <input class="form-control hint" type="text" id="telefone" name="telefone" placeholder="telefone" required="">
+                            <input class="form-control hint" type="text" id="telefone" name="telefone" placeholder="telefone" required>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
-                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="cep" name="cep" placeholder="Cep" required="" autocomplete="off">
+                            <label class="sr-only" for="numb_guests1">Idade</label>
+                            <input class="form-control hint" type="text" id="idade" name="idade" placeholder="Idade" required>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="reserv_date1">Endereço</label>
-                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Endereço" name="Endereço" placeholder="Endereço" required="">
+                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="cep" name="cep" placeholder="Cep" required="" autocomplete>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="numb_guests1">Idade</label>
-                            <input class="form-control hint" type="text" id="Idade" name="Idade" placeholder="Idade" required="">
+                            <label class="sr-only" for="reserv_date1">Endereço</label>
+                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Endereço" name="Endereço" placeholder="Endereço" required>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="alt_reserv_date1">Estado</label>
-                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Estado" name="Estado" placeholder="Estado" required="">
+                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Estado" name="Estado" placeholder="Estado" required>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="time1">Cidade </label>
-                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="Cidade" name="Cidade" placeholder="Cidade" required="" autocomplete="off">
+                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="Cidade" name="Cidade" placeholder="Cidade" required autocomplete="off">
                           </div>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                          <label class="form-check-label" for="exampleRadios1">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="comprador" value="option1" checked>
+                          <label class="form-check-label" for="comprador">
                            Comprador
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
-                          Vendedor
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="vendedor" value="option2">
+                          <label class="form-check-label" for="vendedor">
+                            Vendedor
                           </label>
                         </div>
                     <div class="row">
-                          <div class="col-lg-12 col-md-12" style="display: flex; justify-content: end;">
-                            <button type="submit" class="btn btn-danger btn-lg">Salvar!</button>
-                            
-                          </div>
-                        </div> 
-                        <div id="jogos" class="parallax pricing">
-                          <div class="container inner">
-                  
-                              <h2 class="section-title text-center">Jogos</h2>
-                              <p class="lead main text-center">Acesse todos os seus jogos!</p>
-                              
-                              <div class="row text-center chefs">
-                                 
-                                 
-                                  </div>
-                                  
-                                  </div>
-                              </div>
-                  
-                          </div>
-                        
-                      </div><!-- /#chefs -->
-           
+                      <div class="col-lg-12 col-md-12" style="display: flex; justify-content: end;">
+                        <a href="./index.html" class="btn btn-danger btn-lg" id="salvarPerfil" >Salvar</a>
+                      </div>
+                    </div> 
+                    </form>
+                  </div>
+                </div>
+                <div id="jogos" class="parallax pricing">
+                  <div class="container inner">
+          
+                    <h2 class="section-title text-center">Jogos</h2>
+                    <p class="lead main text-center">Acesse todos os seus jogos!</p>
+                      
+                    <div class="row text-center chefs" id="jogosComprados">
+                       
+                      
+                    </div>
+                          
+                  </div>
+                </div>
+              </div><!-- /#chefs -->
+           </div>
 
 
                         <section class="footer">
@@ -192,6 +188,7 @@
         <script src="js/jquery.fittext.js"></script>
     	<script src="js/modernizr.js" type="text/javascript"></script>
     	<!-- Custom -->
+      <script src="./src/js/main.js"></script>
         <script src="js/script.js"></script>
         <script src="js/jquery.countdown.js"></script>
         <script type="text/javascript">
