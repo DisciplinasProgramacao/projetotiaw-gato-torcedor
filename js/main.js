@@ -12,16 +12,23 @@ document.addEventListener('click', e=>{
         const emaillog = form.email.value;
 
         const login = JSON.parse(localStorage.getItem('login'));
+
+        let teste = false;
         
         if(login != null){
             for(let i = 0; i < login.length; i++){
                 const {email, senha} = login[i];
                 if(senhalog == senha && emaillog == email){
                     alert("usuario logado com sucesso");
+                    let logado = localStorage.getItem('logado');
+                    localStorage.setItem('logado', email);
+                    teste = true;
                     window.location.href =  document.getElementById('fazerLogin').href;
                 }
             }
-            
+        }
+        if(teste == false){
+            alert("Email ou senha incorretos");
         }
     }
 })
