@@ -9,6 +9,11 @@ Nossa plataforma tem como objetivo otimizar trocas e o empréstimo do cartão s�
   - login errado sem mensagem de erro
   - páginas principais totalmente quebradas, sem css etc
   (provavelmente por não ter um ramo master consolidado)  
+ 
+# Nota de apresentação 88/100
+
+**Importante:** A nota-base do grupo é calculada a partir das porcentagens acima. A nota individual leva em consideração ainda a nota de acompanhamento nas reuniões de grupos, a participação efetiva nas tarefas e commits e os descontos por falta nas reuniões. 
+
   
 ## Comentários da correção
 
