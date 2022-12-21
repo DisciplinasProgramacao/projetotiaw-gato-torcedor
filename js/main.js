@@ -18,10 +18,17 @@ document.addEventListener('click', e=>{
                 const {email, senha} = login[i];
                 if(senhalog == senha && emaillog == email){
                     alert("usuario logado com sucesso");
+                    const userlogin = {
+                        email: email,
+                        senha: senha
+                    }
+                    localStorage.setItem("usuarioLogado",  JSON.stringify(userlogin));
                     window.location.href =  document.getElementById('fazerLogin').href;
                 }
             }
             
         }
     }
-})
+})            
+            
+    
