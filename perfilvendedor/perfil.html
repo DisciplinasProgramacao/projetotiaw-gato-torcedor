@@ -50,15 +50,13 @@
 	  <div id="tela" class="mb-3"></div>
 	  <br>
 	  	<div id="formJogos">
-		nome de usuário <br>
+		e-mail de usuário <br>
 		<input type="text" id="campoJogos"></input><br>
 		<br>
-		tipo de usuário <br>
+		senha do usuário <br>
 		<input type="text" id="campoPreco"><br>
 		<br>
-		biografia <br>
-		<input type="text" id="campoObs"><br>
-		<br><br>
+		
 			
 
       <br>
@@ -87,7 +85,15 @@
 			   </ul>
 			</p>
 		<script>
+			  var login= JSON.parse(localStorage.getItem("usuarioLogado"));
+	
+				const email = document.getElementById("campoJogos");
+				const senha = document.getElementById("campoPreco");
+
+				email.value = login.email;
+				senha.value = login.senha;
 				
+
 				var stars= document.querySelectorAll('.star-icon');
 					document.addEventListener('click',function(st){
 				var classStar = st.target.classList;
@@ -95,6 +101,8 @@
 						stars.forEach(function(star){
 						stars.classList.remove('ativo');
 						});
+					}
+				})
 		</script>
 		 </div>
 		
