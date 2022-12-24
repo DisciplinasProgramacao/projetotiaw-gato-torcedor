@@ -524,7 +524,12 @@ p.sub-title {
     height: 18px;
     width: 6px;
 }
-
+.map{
+  height: 35rem;
+}
+#map{
+  height: 100%;
+}
 .like-bottom
 {
     position: relative;

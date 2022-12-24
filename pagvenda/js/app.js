@@ -22,10 +22,12 @@ function incluirJogos () {
     let objDados = leDados();
 
     // Incluir um novo jogo
+    let strCampeonato = document.getElementById('campoCampeonato').value;
     let strJogo = document.getElementById ('campoJogos').value;
     let strPreco = document.getElementById ('campoPreco').value;
     let strObservacoes = document.getElementById ('campoObs').value;
     let novoJogo = {
+        campeonato: strCampeonato,
         jogo: strJogo,
         preco: strPreco,
         observacoes: strObservacoes
@@ -47,7 +49,7 @@ function imprimeDados () {
     let objDados = leDados ();
     
     for(i = 0; i < objDados.jogos.length; i++){
-        strHtml += `<p>${objDados.jogos[i].jogo} - ${objDados.jogos[i].preco} - ${objDados.jogos[i].observacoes}</p>` 
+        strHtml += `<p>${objDados.jogos[i].campeonato} - ${objDados.jogos[i].jogo} - ${objDados.jogos[i].preco} - ${objDados.jogos[i].observacoes}</p>` 
     }
 
     tela.innerHTML = strHtml;

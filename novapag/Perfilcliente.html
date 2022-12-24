@@ -28,16 +28,12 @@
 	<div class="homepage">
 	<header>
 	    <div class="navbar navbar-default" role="navigation">
-	       
-	    	<img class="navbar-brand" src="./src/img/logo2.jpeg" style="height: 6rem; width: 6rem; padding:0">
+	       <a href="../tela-principal/index.html">
+          <img class="navbar-brand" src="./src/img/logo2.jpeg" style="height: 6rem; width: 6rem; padding:0">
+         </a>
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav navbar-right">
-	            <li class="active"><a href="#menu-slider">Home</a></li>
-	            <li><a href="#menu-features">Sobre nós</a></li>
-	            <li><a href="#menu-countdown">Contagem Regressiva</a></li>
-	            <li><a href="#menu-price">Preços</a></li>
-	            <li><a href="#menu-testimonial">Equipe</a></li>
-	            <li><a href="#menu-contact">Fale conosco</a></li>
+	            <li class="active"><a href="../tela-principal/index.html">Home</a></li>
 	          </ul>
 	        </div>
 	    </div>
@@ -45,15 +41,21 @@
 	</div>
 
 	<div id="reserva de ingressos" class="light-wrapper">    
-        <section class="ss-style-top"></section>
+
         <div class="container inner">
             <h2 class="section-title text-center">Perfil do Usuário</h2>
             <p class="lead main text-center">Faça o seu perfil</p>
+<<<<<<< HEAD
              <div class="row">
            <div class="col-sm-12-col-md-12 img">
           <div class="menu-images "><img src="./src/img/perfil.jpg" alt="campeonato brasileiro"></div>
                 <textarea></textarea>
             
+=======
+            <div class="row">
+           <div class="col-sm-12-col-md-12" style="display: flex; flex-direction: column; align-items: center;">
+               <img id="img-perfil" src="./src/img/perfil.jpg" alt="campeonato brasileiro">
+>>>>>>> 5d03a6673da2cc5b0b6dd25ce1e45bafe0ef4f26
               </div> 
             
             </div>
@@ -61,64 +63,62 @@
           
             <div class="row">
                 <div class="col-md-12">
-                    <form class="form form-table" method="post" name="">
+                  <form class="form form-table" id="form-perfil">
                         <div class="form-group">
                             <h4> Preencha o formulário de Perfil (todos os campos obrigatórios)</h4>
                         </div>
-                          </div>
-
                         <div class="row">
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="primeiro nome">primeiro nome</label>
-                            <input class="form-control hint" type="text" id="primeiro nome" name="primeiro nome" placeholder="primeiro nome" required="">
+                            <input class="form-control hint" type="text" id="nome" name="nome" placeholder="primeiro nome" required>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="last_name1">sobre nome</label>
-                            <input class="form-control hint" type="text" id="sobre nome" name="sobre nome" placeholder="sobre nome" required="">
+                            <input class="form-control hint" type="text" id="sobreNome" name="sobreNome" placeholder="sobre nome" required>
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="email1">email</label>
-                            <input class="form-control hint" type="email" id="email1" name="email" placeholder="Email@domain.com" required="">
-                          </div>
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="phone1">telefone</label>
-                            <input class="form-control hint" type="text" id="telefone" name="telefone" placeholder="telefone" required="">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 form-group">
-                            <label class="sr-only" for="reserv_date1">Endereço</label>
-                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Endereço" name="Endereço" placeholder="Endereço" required="">
+                            <input class="form-control hint" type="text" id="telefone" name="telefone" placeholder="telefone" required>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="numb_guests1">Idade</label>
-                            <input class="form-control hint" type="text" id="Idade" name="Idade" placeholder="Idade" required="">
+                            <input class="form-control hint" type="text" id="idade" name="idade" placeholder="Idade" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 form-group">
+                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="cep" name="cep" placeholder="Cep" required="" autocomplete>
+                          </div>
+                          <div class="col-lg-6 col-md-6 form-group">
+                            <label class="sr-only" for="reserv_date1">Endereço</label>
+                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Endereço" name="Endereço" placeholder="Endereço" required>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="alt_reserv_date1">Estado</label>
-                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Estado" name="Estado" placeholder="Estado" required="">
+                            <input class="form-control datepicker hasDatepicker hint" type="text" id="Estado" name="Estado" placeholder="Estado" required>
                           </div>
                           <div class="col-lg-6 col-md-6 form-group">
                             <label class="sr-only" for="time1">Cidade </label>
-                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="Cidade" name="Cidade" placeholder="Cidade" required="" autocomplete="off">
+                            <input class="form-control timepicker ui-timepicker-input hint" type="text" id="Cidade" name="Cidade" placeholder="Cidade" required autocomplete="off">
                           </div>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                          <label class="form-check-label" for="exampleRadios1">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="comprador" value="option1" checked>
+                          <label class="form-check-label" for="comprador">
                            Comprador
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
-                          Vendedor
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="vendedor" value="option2">
+                          <label class="form-check-label" for="vendedor">
+                            Vendedor
                           </label>
                         </div>
+<<<<<<< HEAD
                       <div class="row">
                           <div class="col-lg-12 col-md-12">
                             <button type="submit" class="btn btn-danger btn-lg">Salvar!</button>
@@ -143,6 +143,31 @@
                         
                       </div><!-- /#chefs -->
            
+=======
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12" style="display: flex; justify-content: end;">
+                        <a href="./index.html" class="btn btn-danger btn-lg" id="salvarPerfil" >Salvar</a>
+                      </div>
+                    </div> 
+                    </form>
+                  </div>
+                </div>
+                <div id="jogos" class="parallax pricing">
+                  <div class="container inner">
+          
+                    <h2 class="section-title text-center">Jogos</h2>
+                    <p class="lead main text-center">Acesse todos os seus jogos!</p>
+                      
+                    <div class="row text-center chefs" id="jogosComprados">
+                       
+                      
+                    </div>
+                          
+                  </div>
+                </div>
+              </div><!-- /#chefs -->
+           </div>
+>>>>>>> 5d03a6673da2cc5b0b6dd25ce1e45bafe0ef4f26
 
 
                         <section class="footer">
@@ -198,6 +223,7 @@
         <script src="js/jquery.fittext.js"></script>
     	<script src="js/modernizr.js" type="text/javascript"></script>
     	<!-- Custom -->
+      <script src="./src/js/main.js"></script>
         <script src="js/script.js"></script>
         <script src="js/jquery.countdown.js"></script>
         <script type="text/javascript">
